@@ -9,6 +9,7 @@ services:
       DATABASE_PORT: 5432
       DATABASE_USERNAME: strapi
       DATABASE_PASSWORD: strapi
+      JWT_SECRET: '${BESTORY_JWT_SECRET}'
     links:
       - postgres:postgres
     volumes:
